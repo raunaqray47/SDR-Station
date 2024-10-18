@@ -104,3 +104,22 @@ For this project, the RTL-SDR was used to fetch traffic data from dump1090. The 
     $ dump1090 --net --quiet
     $ modeslive --source net --connect localhost 30002 raw
 
+For installing dump1090 on windows, installing RTL1090 before installing dump1090 simplifies the process.
+
+Install RTL1090 - 
+
+    https://www.jetvision.de/manuals/rtl1090imu.zip
+
+The IMU version will download and install all of the necessary dll’s and drivers. May have to run Zadig manually.
+
+Once this is done, download dump1090 and unzip in the same root folder as RTL1090.
+    
+    http://www.satsignal.eu/software/dump1090-win.1.09.0608.14.zip
+
+Rename pthreadVCE2.dll to pthreadVC2.dll
+
+Navigate to the folder in Terminal/Powershell/CMD and run 
+
+    ./dump1090
+
+This should start dump1090 in it's default mode. 
